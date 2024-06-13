@@ -1,0 +1,14 @@
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+.navbar{
+    padding: 0 4dvw;
+    background-color: #5798f2;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar>button{
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 0px 0px 8px #3686f6b0;
+}
