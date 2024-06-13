@@ -62,6 +62,9 @@
             },
             "development": {
               "buildTarget": "Login-App:build:development"
+            },
+            "options":{
+              "liveReload": true
             }
           },
           "defaultConfiguration": "development"

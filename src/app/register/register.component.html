@@ -2,19 +2,25 @@
   <mat-card-content class="card">
     <mat-form-field color="accent">
       <mat-label>Email</mat-label>
-      <input matInput [(ngModel)]="email" />
+      <input type="text" matInput [(ngModel)]="email" />
+    </mat-form-field>
+    <mat-form-field color="accent">
+      <mat-label>Name</mat-label>
+      <input type="text" matInput [(ngModel)]="uname" />
     </mat-form-field>
     <mat-form-field color="accent">
       <mat-label>Password</mat-label>
       <input type="password" matInput [(ngModel)]="pass" />
     </mat-form-field>
 
-    <div class="register">
+    <div class="login">
       <span
-        >Don't have account? <a routerLink="/register">Register Here</a>
+        >Already have account? <a routerLink="/">Login</a>
       </span>
     </div>
 
-    <button mat-raised-button color="accent" (click)="login()">Login</button>
+    <button mat-raised-button color="accent" (click)="register()">
+      Register
+    </button>
   </mat-card-content>
 </mat-card>

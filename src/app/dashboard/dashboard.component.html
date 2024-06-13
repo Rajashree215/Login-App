@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<main>
+  @if(name && icon && description && temp && feels_like && max && min &&
+  humidity){
+  <div class="card">
+    <div class="first">
+      <h1>{{ name }}</h1>
+      <div class="desc">
+        <img src="{{ icon }}" alt="" height="50" width="50" />
+        <span>{{ description }}</span>
+      </div>
+    </div>
+
+    <h2>{{ temp }}°C</h2>
+    <p>
+      Feels like <span>{{ feels_like }}°C</span>
+    </p>
+    <p>
+      Max <span>{{ max }}°</span>
+    </p>
+    <p>
+      Min <span>{{ min }}°</span>
+    </p>
+    <p>
+      Humidity <span>{{ humidity }}%</span>
+    </p>
+  </div>
+  }
+</main>

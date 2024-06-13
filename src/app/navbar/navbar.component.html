@@ -1,0 +1,17 @@
+@if(uname.trim()!=='') {
+<mat-toolbar [class.mat-elevation-z8]="true" class="navbar">
+  <h1 style="color: #eee; font-weight: bold">Welcome {{ uname }}!</h1>
+  <button mat-button (click)="logout()">
+    Logout
+    <!-- <mat-icon>logout</mat-icon> -->
+  </button>
+</mat-toolbar>
+} @else{
+<mat-toolbar [class.mat-elevation-z8]="true" class="navbar">
+  <h1 style="color: #eee; font-weight: bold">Welcome User!</h1>
+  <button mat-button (click)="logout()">
+    Logout
+    <!-- <mat-icon>logout</mat-icon> -->
+  </button>
+</mat-toolbar>
+}

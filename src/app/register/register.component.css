@@ -3,17 +3,23 @@
     height: fit-content;
     margin: 0 auto;
     position: relative;
-    top: 20vh;
+    top: 18vh;
 }
 .card{
     display: flex;
     flex-direction: column;
 }
-.register{
+.success{
+    background-color: green;
+}
+.error{
+    background-color: red;
+}
+.login{
     padding: inherit;
     height: .3vh;
 }
-.register > span{
+.login > span{
     position: absolute;
     right: 0;
     bottom: 8vh;
